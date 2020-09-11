@@ -38,10 +38,6 @@ index.html script.js style.css
 
 </p>
 
-## Screenshot
-
-
-
 ### Link to the App
 
 
