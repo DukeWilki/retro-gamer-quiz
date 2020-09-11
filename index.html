@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="wrapper" id="game-wrapper">
+      <div class="header container">
+        <h1>CODING-QUIZ</h1>
+      </div>
+
+      <!-- Emoji Section -->
+      <section class="container" id="emojis">
+        <p id="goodluck">☘️☘️ GOOD LUCK ☘️☘️</p>
+        <p id="thinking" class="hidden">🤔🤔 HMMMM 🤔🤔</p>
+        <p id="correct" class="hidden">🔥😎 TOO COOL 😎🔥</p>
+        <p id="wrong" class="hidden">😨😨 OH NO! 😨😨</p>
+      </section>
+      <!-- Heads-up display (HUD) Section -->
+      <section class="container hidden" id="hud">
+        <div>
+          <p id="scoreBoard"></p>
+          <div id="progressBar">
+            <div id="progressBarFull"></div>
+          </div>
+        </div>
+        <div>
+          <p id="clock"></p>
+          <p class="hidden" id="gameOver">GAME OVER</p>
+        </div>
+      </section>
+
+      <!--  Question Section-->
+      <section class="container hidden" id="question-panel">
+        <div id="question">Question</div>
+      </section>
+
+      <!-- Answer Section-->
+      <section class="container hidden" id="answer-panel">
+        <div id="answer-buttons" class="grid">
+          <button class="button">Answer 1</button>
+          <button class="button">Answer 2</button>
+          <button class="button">Answer 3</button>
+          <button class="button">Answer 4</button>
+        </div>
+      </section>
+
+      <!-- Player Section -->
+      <section class="container hidden" id="user-form">
+        <form>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="INITIALS"
+          />
+          <button
+            type="submit"
+            class="name-button button"
+            id="saveMyScore"
+            onclick="saveHighScore(event)"
+            disabled
+          >
+            Save
+          </button>
+        </form>
+      </section>
+
+      <!-- High Score Section -->
+      <section class="container hidden" id="highscores">
+        <ol id="highScoresList"></ol>
+      </section>
+
+      <!-- Control Section -->
+      <section class="container" id="controls">
+        <button id="start-button" class="start-button button">
+          START QUIZ
+        </button>
+        <button id="next-button" class="next-button button hidden">
+          NEXT QUESTION
+        </button>
+        <button
+          id="again-button"
+          onClick="document.location.reload(true)"
+          class="again-button button hidden"
+        >
+          PLAY AGAIN?
+        </button>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

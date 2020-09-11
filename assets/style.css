@@ -1,0 +1,102 @@
+* {
+    font-family: 'Press Start 2P', cursive;
+    color: chartreuse;
+}
+
+
+body {
+    background-color: rgb(151, 151, 151);
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.container {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    border: solid black 2pt;
+    padding: 20px;
+    border-bottom-style: dashed;
+    border-bottom-color: chartreuse;
+} 
+
+#hud {
+    justify-content: space-between;
+}
+
+.hidden {
+    display: none;
+}
+
+.wrong {
+    background-color: red;
+}
+
+.correct {
+    background-color: green;
+}
+
+
+.button {
+    background-color: black;
+    color: chartreuse;
+    font-family: 'Press Start 2P', cursive;
+    padding: 5px 180px;
+    text-align: center;
+    border-style: dotted;
+    border-color: chartreuse;
+    padding: 10px;
+}
+
+#question-panel {
+    height: 100px;
+    text-align: center;
+}
+
+#question {
+    padding: 25px;
+}
+
+#emojis {
+    font-size: xx-large;
+}
+
+#controls {
+    height: 100px;
+}
+
+#start-button, #next-button {
+    width: 250px;
+}
+
+#saveMyScore {
+    background-color: black;
+    color: chartreuse;
+}
+
+#username {
+    background-color: black;
+    color: chartreuse;
+    height: 30px;
+    text-align: center;
+    border-style: dotted;
+    border-color: chartreuse;
+}
+
+#highScoresList {
+    list-style: none;
+    width: 250px;
+    text-transform: uppercase;
+}
+
+h5 {
+    width: max-content;
+}
+
+li {
+padding: 10px;
+}
