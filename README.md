@@ -1,5 +1,5 @@
 # Code Quiz
-This assignment was to create a quiz using javascript. I used CSS and google fontas to give it a retro look of the early 1990s, but I also added modern emojis to hint at modern times. Only the top 5 scores are recorded, but this can be chenged in the javascrupt slice.
+This assignment was to create a quiz using javascript. I used CSS and Google fonts to give it a retro look of the early 1990s, but I also added modern emojis to hint at modern times. Only the top 5 scores are recorded, but this can be chenged in the javascrupt slice.
 
 ## Contents
 <p>
