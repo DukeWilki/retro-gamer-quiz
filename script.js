@@ -44,7 +44,7 @@ scoreBoard.innerText = currentScore;
 const highscores = JSON.parse(localStorage.getItem("highscores")) || [];
 
 // Decide cause of death
-const killers = ["measles", "snakebite", "exhaustion", "typhoid", "cholera", "dysentery", "drowning", "accidental gunshot"];
+const killers = ["measles", "snakebite", "exhaustion", "typhoid", "cholera", "dysentery", "drowning", "accidental gunshot", "a broken arm", "a broken Leg", "fever", "diphtheria"];
 let killer = killers[Math.floor(Math.random() * killers.length)];
 console.log(killer)
 causeOfDeath.innerHTML = killer;

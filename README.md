@@ -1,4 +1,4 @@
-# Code Quiz
+# Retro Gamer Quiz
 This assignment was to create a quiz using javascript. I used CSS and Google fonts to give it a retro look of the early 1990s, but I also added modern emojis to hint at modern times. Only the top 5 scores are recorded, but this can be chenged in the javascrupt slice.
 
 ## Contents
@@ -44,7 +44,7 @@ index.html script.js style.css
 * V2.0 Rebranded from "Coding-Quiz" to "Retro-Gamer-Quiz" to better match the UI and make the game more fun for users
 * V2.0 Added gamer based questions, took away coding based questions
 * V2.0 Fixed save score issues, it was previously saving data one game behind 
-* V2.0 Removed emooji section from game over screen
+* V2.0 Removed emoji section from game over screen
 * V2.0 Added "Oregon Trail" tribute to the end of the game
 
 ### FUTURE UPDATES
@@ -68,4 +68,4 @@ Not applicable
 ## Credits and links
 Google Fonts
 ## IMAGES
-Oregon Trail: 
+Oregon Trail: eonline.com
