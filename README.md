@@ -40,6 +40,20 @@ index.html script.js style.css
 
 ### Link to the App
 
+### UPDATES
+* V2.0 Rebranded from "Coding-Quiz" to "Retro-Gamer-Quiz" to better match the UI and make the game more fun for users
+* V2.0 Added gamer based questions, took away coding based questions
+* V2.0 Fixed save score issues, it was previously saving data one game behind 
+* V2.0 Removed emooji section from game over screen
+* V2.0 Added "Oregon Trail" tribute to the end of the game
+
+### FUTURE UPDATES
+* Limit initials to 3 digits only
+* Disable the ability to keep pressing the same answer instead of "Next Question"
+* Force user to enter initial
+* Disable previously entered data from appearing when initails feild is being entered
+* Enable keys to select answers (1, 2, 3, 4)
+* Make answers appear in random order
 
 ### Licence
 Not applicable
@@ -53,3 +67,5 @@ Not applicable
 
 ## Credits and links
 Google Fonts
+## IMAGES
+Oregon Trail: 

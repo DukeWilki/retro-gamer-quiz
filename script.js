@@ -24,6 +24,9 @@ const highscoreContainer = document.getElementById("highscores");
 const startButton = document.getElementById("start-button");
 const nextButton = document.getElementById("next-button");
 const playAgainButton = document.getElementById("again-button");
+// DOM Cause of Death Array
+const death = document.getElementById("death");
+const causeOfDeath = document.getElementById("causeOfDeath");
 
 // Global question shuffle elements
 let questionSelector;
@@ -36,9 +39,16 @@ let interval;
 // Global score elements and constraints
 let questionCounter = 0;
 let points = 0;
-const currentScore = localStorage.getItem("currentScore");
+let currentScore = localStorage.getItem("currentScore");
 scoreBoard.innerText = currentScore;
 const highscores = JSON.parse(localStorage.getItem("highscores")) || [];
+
+// Decide cause of death
+const killers = ["measles", "snakebite", "exhaustion", "typhoid", "cholera", "dysentery", "drowning", "accidental gunshot"];
+let killer = killers[Math.floor(Math.random() * killers.length)];
+console.log(killer)
+causeOfDeath.innerHTML = killer;
+
 
 // Listeners
 startButton.addEventListener("click", startGame);
@@ -165,6 +175,9 @@ function clearStatusClass(element) {
 
 function endGame() {
   clock.classList.add("hidden");
+  nextButton.classList.add("hidden");
+  emojis.classList.add("hidden");
+  death.classList.remove("hidden");
   gameOver.classList.remove("hidden");
   questionContainer.classList.add("hidden");
   answerContainer.classList.add("hidden");
@@ -176,6 +189,7 @@ function recordScore() {
   saveHighScore = (e) => {
     console.log("clicked the save button");
     e.preventDefault();
+    currentScore = localStorage.getItem("currentScore");
     const score = {
       score: currentScore,
       name: username.value,
@@ -294,6 +308,42 @@ const questionArray = [
       { text: "Gems", isCorrect: false },
       { text: "Emeralds", isCorrect: true },
       { text: "Coins", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "'Where in ___ is Carmen Sandiego' is not a real video game?",
+    answers: [
+      { text: "North Daktota", isCorrect: false },
+      { text: "the U.S.A.", isCorrect: false },
+      { text: "China", isCorrect: true },
+      { text: "Japan", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "In which game coupld you die from dysentery?",
+    answers: [
+      { text: "Oregon Trail", isCorrect: true },
+      { text: "Gold Rush", isCorrect: false },
+      { text: "Pilgrum Quest", isCorrect: false },
+      { text: "Crosscountry Canada", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "Canteloupe, hair tonic and toasters are traded commodities in which game?",
+    answers: [
+      { text: "Airline Tycoon Deluxe", isCorrect: false },
+      { text: "Turmoil", isCorrect: false },
+      { text: "Lemonaide Stand", isCorrect: false },
+      { text: "Gazillionaire Deluxe", isCorrect: true },
+    ],
+  },
+  {
+    questionText: "Charachters of 'The Sims' speak which language?",
+    answers: [
+      { text: "Simplish", isCorrect: false },
+      { text: "Singlish", isCorrect: false },
+      { text: "Gibberish", isCorrect: false },
+      { text: "Simlish", isCorrect: true },
     ],
   },
 ];
