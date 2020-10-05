@@ -198,51 +198,102 @@ function recordScore() {
 // Questions
 const questionArray = [
   {
-    questionText: "Commonly used data types DO NOT inlude:",
+    questionText: "In the original Donkey Kong game, Jumpman soon became known as what?",
     answers: [
-      { text: "alerts", isCorrect: true },
-      { text: "booleans", isCorrect: false },
-      { text: "numbers", isCorrect: false },
-      { text: "strings", isCorrect: false },
+      { text: "Luigi", isCorrect: false },
+      { text: "Toad", isCorrect: false },
+      { text: "Mario", isCorrect: true },
+      { text: "Peach", isCorrect: false },
     ],
   },
   {
-    questionText:
-      "The condition in an if/else statement is enclosed within __________",
+    questionText: "In Tekken, what species is Roger?",
     answers: [
-      { text: "curly braces", isCorrect: false },
-      { text: "parenthesis", isCorrect: true },
-      { text: "quotes", isCorrect: false },
-      { text: "square brackets", isCorrect: false },
+      { text: "Dinosaur", isCorrect: false },
+      { text: "Human", isCorrect: false },
+      { text: "Ent", isCorrect: false },
+      { text: "Kangaroo", isCorrect: true },
     ],
   },
   {
-    questionText: "Arrays in JavaScript can be used to store __________",
+    questionText: "In WarGames, the fate of the world is solved by making the computer play itself in what game? ",
     answers: [
-      { text: "booleans", isCorrect: false },
-      { text: "numbers and strings", isCorrect: true },
-      { text: "other arrays", isCorrect: false },
-      { text: "all of the above", isCorrect: false },
+      { text: "Chess", isCorrect: false },
+      { text: "Checkers", isCorrect: false },
+      { text: "Tic Tac Toe", isCorrect: true },
+      { text: "Paper Scissors Rock", isCorrect: false },
     ],
   },
   {
-    questionText:
-      "String values must be enclosed within __________ when being assigned to variables.",
+    questionText: "The Sega Genesis was marketed as what outside of North America?",
     answers: [
-      { text: "commas", isCorrect: false },
-      { text: "curly braces", isCorrect: false },
-      { text: "quotes", isCorrect: true },
-      { text: "parenthesis", isCorrect: false },
+      { text: "Sega Mega Drive", isCorrect: true },
+      { text: "Sega Master System", isCorrect: false },
+      { text: "Sega Saturn", isCorrect: false },
+      { text: "Sega Genesis", isCorrect: false },
     ],
   },
   {
-    questionText:
-      "A very useful tool used during development and debugging for printing content to the degugger is:",
+    questionText: "What was the first gaming console to be used with a television set?",
     answers: [
-      { text: "JavaScript", isCorrect: false },
-      { text: "terminal/bash", isCorrect: false },
-      { text: "for loops", isCorrect: false },
-      { text: "console.log", isCorrect: true },
+      { text: "Atari 2600", isCorrect: false },
+      { text: "Magnavox Odyssey", isCorrect: true },
+      { text: "Coleco Telstar", isCorrect: false },
+      { text: "Mettel Intellivision", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "What was the first video game to save your high score?",
+    answers: [
+      { text: "Pong", isCorrect: false },
+      { text: "Space Invaders", isCorrect: true },
+      { text: "Donkey kong", isCorrect: false },
+      { text: "Pac Man", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "In Pac Man, what colour do the ghosts turn when they become edible?",
+    answers: [
+      { text: "Blue", isCorrect: true },
+      { text: "Pink", isCorrect: false },
+      { text: "Yellow", isCorrect: false },
+      { text: "Violet", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "The actor of Steve Urkel also played what video game charachter in a 1990's cartoon series?",
+    answers: [
+      { text: "Eartworm Jim", isCorrect: false },
+      { text: "Zelda", isCorrect: false },
+      { text: "Carmen Sandiego", isCorrect: false },
+      { text: "Sonic the Hedgehog", isCorrect: true },
+    ],
+  },
+  {
+    questionText: "What game was included free on Windows 3.1?",
+    answers: [
+      { text: "Minecraft", isCorrect: false },
+      { text: "Lemmings", isCorrect: false },
+      { text: "Lemonaide Stand", isCorrect: false },
+      { text: "Minesweeper", isCorrect: true },
+    ],
+  },
+  {
+    questionText: "In the Japanese release of Street Fighter, what was the name of the charachter that comes from Spain?",
+    answers: [
+      { text: "Balrog", isCorrect: true },
+      { text: "Vega", isCorrect: false },
+      { text: "Blanka", isCorrect: false },
+      { text: "M. Bison", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "What gives Sonic the Hedgehog his 'Super Sonic' powers?",
+    answers: [
+      { text: "Rings", isCorrect: false },
+      { text: "Gems", isCorrect: false },
+      { text: "Emeralds", isCorrect: true },
+      { text: "Coins", isCorrect: false },
     ],
   },
 ];
