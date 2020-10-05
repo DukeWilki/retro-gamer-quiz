@@ -24,6 +24,10 @@ body {
     border-bottom-color: chartreuse;
 } 
 
+ #death {
+    vertical-align: middle;
+}
+
 #hud {
     justify-content: space-between;
 }

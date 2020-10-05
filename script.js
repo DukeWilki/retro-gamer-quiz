@@ -315,8 +315,8 @@ const questionArray = [
     answers: [
       { text: "North Daktota", isCorrect: false },
       { text: "the U.S.A.", isCorrect: false },
-      { text: "China", isCorrect: true },
-      { text: "Japan", isCorrect: false },
+      { text: "the U.S.S.R.", isCorrect: true },
+      { text: "Space", isCorrect: false },
     ],
   },
   {
