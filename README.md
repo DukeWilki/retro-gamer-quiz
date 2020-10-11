@@ -64,7 +64,7 @@ https://dukewilki.github.io/retro-gamer-quiz/
 * Make answers appear in random order
 
 ### Licence
-Not applicable
+MIT License | Copyright (c) 2020 Luke Wilkinson | https://github.com/DukeWilki/retro-gamer-quiz/blob/master/LICENSE
 
 ## Built With
 * [VScode](https://code.visualstudio.com/) - The editor of choice
