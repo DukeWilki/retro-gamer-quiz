@@ -35,6 +35,7 @@ let currentQuestionIndex;
 // Global timer elements
 let timer = 30;
 let interval;
+let spaceInvaderIntervalId;
 
 // Global score elements and constraints
 let questionCounter = 0;
@@ -46,7 +47,6 @@ const highscores = JSON.parse(localStorage.getItem("highscores")) || [];
 // Decide cause of death
 const killers = ["measles", "snakebite", "exhaustion", "typhoid", "cholera", "dysentery", "drowning", "accidental gunshot", "a broken arm", "a broken Leg", "fever", "diphtheria"];
 let killer = killers[Math.floor(Math.random() * killers.length)];
-console.log(killer)
 causeOfDeath.innerHTML = killer;
 
 // Listeners
@@ -61,6 +61,30 @@ username.addEventListener("keyup", () => {
   recordScore();
 });
 
+// Background animation
+// Set staring image
+function setBodyBackgroundImg(img){
+  document.querySelector("body").style = 'background-image: url("' + img + '")'
+}
+setBodyBackgroundImg('./assets/spacies0.jpg');
+// Start animation
+function animateSpaceInvader(){
+  let img1 = './assets/spacies1.jpg';
+  let img2 = './assets/spacies2.jpg';
+  let currentBackground = img1;
+  spaceInvaderIntervalId = setInterval(() => {
+    // swap the image
+    if(currentBackground === img1){
+      setBodyBackgroundImg(img2)
+      currentBackground = img2
+    }else{
+      setBodyBackgroundImg(img1);
+      currentBackground = img1;
+    }
+    // every half second
+  }, 500);
+}
+
 // Functions
 function startGame() {
   // Hide & display sections
@@ -70,6 +94,7 @@ function startGame() {
   questionContainer.classList.remove("hidden");
   answerContainer.classList.remove("hidden");
   startButton.classList.add("hidden");
+  animateSpaceInvader();
   // Start timer
   setInterval(startTimer, 1000);
   startTimer();
@@ -84,6 +109,7 @@ function startGame() {
   setNextQuestion();
 }
 
+// Time watcher
 function startTimer() {
   if (timer > 0) {
     clock.textContent = timer;
@@ -126,9 +152,7 @@ function resetQuestion() {
 function selectAnswer(e) {
   const selection = e.target;
   const isCorrect = selection.dataset.isCorrect;
-  setStatusClass(document.body, isCorrect);
   Array.from(answerButtons.children).forEach((button) => {
-    setStatusClass(button, button.dataset.isCorrect);
   });
   if (questionSelector.length > currentQuestionIndex + 1) {
     nextButton.classList.remove("hidden");
@@ -155,18 +179,7 @@ function selectAnswer(e) {
   }
 }
 
-function setStatusClass(element, correct) {
-  clearStatusClass(element);
-  if (correct) {
-    element.classList.add("correct");
-  } else {
-    element.classList.add("wrong");
-  }
-}
-
 function clearStatusClass(element) {
-  element.classList.remove("correct");
-  element.classList.remove("wrong");
   wrongEmoji.classList.add("hidden");
   correctEmoji.classList.add("hidden");
   thinkingEmoji.classList.remove("hidden");
@@ -182,11 +195,11 @@ function endGame() {
   answerContainer.classList.add("hidden");
   userFormContainer.classList.remove("hidden");
   playAgainButton.classList.remove("hidden");
+  clearInterval(spaceInvaderIntervalId);
 }
 
 function recordScore() {
   saveHighScore = (e) => {
-    console.log("clicked the save button");
     e.preventDefault();
     currentScore = localStorage.getItem("currentScore");
     const score = {
@@ -198,7 +211,6 @@ function recordScore() {
     highscores.sort((a, b) => b.score - a.score);
     highscores.splice(5);
     localStorage.setItem("highscores", JSON.stringify(highscores));
-    console.log(highscores);
     highscoreContainer.classList.remove("hidden");
     highScoresList.innerHTML = highscores
       .map((score) => {
@@ -365,7 +377,7 @@ const questionArray = [
     ],
   },
   {
-    questionText: "What famous video game character was originally called Laura Cruz?",
+    questionText: "Which famous video game character was originally called Laura Cruz?",
     answers: [
       { text: "Sonya Blade", isCorrect: false },
       { text: "Tifa Lockhart", isCorrect: false },
