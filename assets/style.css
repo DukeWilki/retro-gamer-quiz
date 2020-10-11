@@ -6,6 +6,7 @@
 
 body {
     background-color: rgb(151, 151, 151);
+    background-image: url(spacies1.jpg);
 }
 
 .wrapper {
@@ -63,6 +64,7 @@ body {
 
 #question {
     padding: 25px;
+    padding-top: 10px;
 }
 
 #emojis {

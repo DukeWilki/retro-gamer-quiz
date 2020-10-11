@@ -49,7 +49,6 @@ let killer = killers[Math.floor(Math.random() * killers.length)];
 console.log(killer)
 causeOfDeath.innerHTML = killer;
 
-
 // Listeners
 startButton.addEventListener("click", startGame);
 nextButton.addEventListener("click", () => {
@@ -209,15 +208,25 @@ function recordScore() {
   };
 }
 
+
+function spaceInvaders() {
+  var curImgId = 0;
+  var numberOfImages = 2; // Change this to the number of background images
+  window.setInterval(function() {
+      $('body').css('background-image','url(/assets/species' + curImgId + '.jpg)');
+      curImgId = (curImgId + 1) % numberOfImages;
+  }, 15 * 1000);
+};
+
 // Questions
 const questionArray = [
   {
-    questionText: "In the original Donkey Kong game, Jumpman soon became known as what?",
+    questionText: "In the original Donkey Kong game, what is the playable charachter called?",
     answers: [
       { text: "Luigi", isCorrect: false },
+      { text: "Donkey Kong", isCorrect: false },
+      { text: "Jumpman", isCorrect: true },
       { text: "Toad", isCorrect: false },
-      { text: "Mario", isCorrect: true },
-      { text: "Peach", isCorrect: false },
     ],
   },
   {
@@ -230,7 +239,7 @@ const questionArray = [
     ],
   },
   {
-    questionText: "In WarGames, the fate of the world is solved by making the computer play itself in what game? ",
+    questionText: "In WarGames, the world is saved by making the computer play itself in what game? ",
     answers: [
       { text: "Chess", isCorrect: false },
       { text: "Checkers", isCorrect: false },
@@ -275,12 +284,21 @@ const questionArray = [
     ],
   },
   {
-    questionText: "The actor of Steve Urkel also played what video game charachter in a 1990's cartoon series?",
+    questionText: "The voice actor of Sonic the Hedgehog also played what TV charachter?",
     answers: [
-      { text: "Eartworm Jim", isCorrect: false },
-      { text: "Zelda", isCorrect: false },
-      { text: "Carmen Sandiego", isCorrect: false },
-      { text: "Sonic the Hedgehog", isCorrect: true },
+      { text: "Elmo", isCorrect: false },
+      { text: "The Joker (Batman Animated)", isCorrect: false },
+      { text: "Bart Simpson", isCorrect: false },
+      { text: "Steve Urkel", isCorrect: true },
+    ],
+  },
+  {
+    questionText: "In Pokemon, what does Onix evolve into?",
+    answers: [
+      { text: "Coalix", isCorrect: false },
+      { text: "Steelix", isCorrect: true },
+      { text: "Alumix", isCorrect: false },
+      { text: "Stonix", isCorrect: false },
     ],
   },
   {
@@ -293,7 +311,7 @@ const questionArray = [
     ],
   },
   {
-    questionText: "In the Japanese release of Street Fighter, what was the name of the charachter that comes from Spain?",
+    questionText: "In the Japanese release, what is Street Fighter's Spanish charachter?",
     answers: [
       { text: "Balrog", isCorrect: true },
       { text: "Vega", isCorrect: false },
@@ -320,12 +338,12 @@ const questionArray = [
     ],
   },
   {
-    questionText: "In which game coupld you die from dysentery?",
+    questionText: "What was the first video game played in space?",
     answers: [
-      { text: "Oregon Trail", isCorrect: true },
-      { text: "Gold Rush", isCorrect: false },
-      { text: "Pilgrum Quest", isCorrect: false },
-      { text: "Crosscountry Canada", isCorrect: false },
+      { text: "Tetris", isCorrect: true },
+      { text: "Pong", isCorrect: false },
+      { text: "Donkey Kong", isCorrect: false },
+      { text: "Pokemon", isCorrect: false },
     ],
   },
   {
@@ -344,6 +362,15 @@ const questionArray = [
       { text: "Singlish", isCorrect: false },
       { text: "Gibberish", isCorrect: false },
       { text: "Simlish", isCorrect: true },
+    ],
+  },
+  {
+    questionText: "What famous video game character was originally called Laura Cruz?",
+    answers: [
+      { text: "Sonya Blade", isCorrect: false },
+      { text: "Tifa Lockhart", isCorrect: false },
+      { text: "Jill Valentine", isCorrect: false },
+      { text: "Lara Croft", isCorrect: true },
     ],
   },
 ];
