@@ -39,6 +39,7 @@ index.html script.js style.css
 </p>
 
 ### Link to the App
+https://dukewilki.github.io/retro-gamer-quiz/
 
 ### UPDATES
 * V2.0 Rebranded from "Coding-Quiz" to "Retro-Gamer-Quiz" to better match the UI and make the game more fun for users
