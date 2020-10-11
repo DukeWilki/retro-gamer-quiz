@@ -52,6 +52,8 @@ https://dukewilki.github.io/retro-gamer-quiz/
 * V2.0 Fixed save score issues, it was previously saving data one game behind 
 * V2.0 Removed emoji section from game over screen
 * V2.0 Added "Oregon Trail" tribute to the end of the game
+* V2.1 Added animated background in tribute to space invaders
+* V2.1 Added defualt "Hello World" backdrop as the starting screen
 
 ### FUTURE UPDATES
 * Limit initials to 3 digits only
