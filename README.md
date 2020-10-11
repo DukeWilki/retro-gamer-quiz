@@ -41,9 +41,10 @@ index.html script.js style.css
 ### Link to the App
 https://dukewilki.github.io/retro-gamer-quiz/
 
-![Screenshot 1](https://github.com/DukeWilki/retro-gamer-quiz/blob/master/assets/img/start.JPG)
-![Screenshot 2](https://github.com/DukeWilki/retro-gamer-quiz/blob/master/assets/img/question.JPG)
-![Screenshot 3](https://github.com/DukeWilki/retro-gamer-quiz/blob/master/assets/img/highscores.JPG)
+### Screenshots
+![Screenshot 1](https://github.com/DukeWilki/retro-gamer-quiz/blob/master/assets/start.JPG)
+![Screenshot 2](https://github.com/DukeWilki/retro-gamer-quiz/blob/master/assets/question.JPG)
+![Screenshot 3](https://github.com/DukeWilki/retro-gamer-quiz/blob/master/assets/highscores.JPG)
 
 ### UPDATES
 * V2.0 Rebranded from "Coding-Quiz" to "Retro-Gamer-Quiz" to better match the UI and make the game more fun for users
