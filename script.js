@@ -33,7 +33,7 @@ let questionSelector;
 let currentQuestionIndex;
 
 // Global timer elements
-let timer = 30;
+let timer = 45;
 let interval;
 let spaceInvaderIntervalId;
 
@@ -383,6 +383,33 @@ const questionArray = [
       { text: "Tifa Lockhart", isCorrect: false },
       { text: "Jill Valentine", isCorrect: false },
       { text: "Lara Croft", isCorrect: true },
+    ],
+  },
+  {
+    questionText: "Waht is the world record for blowing cartrages (in 20 seconds)?",
+    answers: [
+      { text: "43 cartrages", isCorrect: true },
+      { text: "38 cartrages", isCorrect: false },
+      { text: "208 cartrages", isCorrect: false },
+      { text: "978 cartrages", isCorrect: false },
+    ],
+  },
+  {
+    questionText: "Chex Quest was the first video game to included free with what?",
+    answers: [
+      { text: "Volvo Cars", isCorrect: false },
+      { text: "Breakfast Cereal", isCorrect: true },
+      { text: "Laptops", isCorrect: false },
+      { text: "Encylopedias", isCorrect: false },
+    ]
+  },
+  {
+    questionText: "What was the first video game to become a live action movie?",
+    answers: [
+      { text: "Double Dragon", isCorrect: false },
+      { text: "Super Mario Bros", isCorrect: true },
+      { text: "Street Fighter", isCorrect: false },
+      { text: "Shinobi", isCorrect: false },
     ],
   },
 ];
