@@ -1,5 +1,5 @@
 # Retro Gamer Quiz
-This assignment was to create a quiz using javascript. I used CSS and Google fonts to give it a retro look of the early 1990s, but I also added modern emojis to hint at modern times. Only the top 5 scores are recorded, but this can be chenged in the javascrupt slice.
+This assignment was to create a quiz using javascript. I used CSS and Google fonts to give it a retro look of the early 1990s, but I also added modern emojis to hint at modern times. Only the top 5 scores are recorded, but this can be chenged in the javascript slice. As the game is now in version 2, easter eggs have been added and the questions now reflect gaming history.
 
 ## Contents
 <p>
@@ -41,12 +41,19 @@ index.html script.js style.css
 ### Link to the App
 https://dukewilki.github.io/retro-gamer-quiz/
 
+### Screenshots
+![Screenshot 1](https://github.com/DukeWilki/retro-gamer-quiz/blob/master/assets/start.JPG)
+![Screenshot 2](https://github.com/DukeWilki/retro-gamer-quiz/blob/master/assets/question.JPG)
+![Screenshot 3](https://github.com/DukeWilki/retro-gamer-quiz/blob/master/assets/highscores.JPG)
+
 ### UPDATES
 * V2.0 Rebranded from "Coding-Quiz" to "Retro-Gamer-Quiz" to better match the UI and make the game more fun for users
 * V2.0 Added gamer based questions, took away coding based questions
 * V2.0 Fixed save score issues, it was previously saving data one game behind 
 * V2.0 Removed emoji section from game over screen
 * V2.0 Added "Oregon Trail" tribute to the end of the game
+* V2.1 Added animated background in tribute to space invaders
+* V2.1 Added defualt "Hello World" backdrop as the starting screen
 
 ### FUTURE UPDATES
 * Limit initials to 3 digits only
@@ -57,7 +64,7 @@ https://dukewilki.github.io/retro-gamer-quiz/
 * Make answers appear in random order
 
 ### Licence
-Not applicable
+MIT License | Copyright (c) 2020 Luke Wilkinson | https://github.com/DukeWilki/retro-gamer-quiz/blob/master/LICENSE
 
 ## Built With
 * [VScode](https://code.visualstudio.com/) - The editor of choice
