@@ -1,4 +1,7 @@
-# Retro Gamer Quiz
+# Retro Gamer Quiz 
+
+<img src="https://img.shields.io/badge/Licence-MIT%20License-yellow"><br>
+
 This assignment was to create a quiz using javascript. I used CSS and Google fonts to give it a retro look of the early 1990s, but I also added modern emojis to hint at modern times. Only the top 5 scores are recorded, but this can be chenged in the javascript slice. As the game is now in version 2, easter eggs have been added and the questions now reflect gaming history.
 
 ## Contents
@@ -65,6 +68,24 @@ https://dukewilki.github.io/retro-gamer-quiz/
 
 ### Licence
 MIT License | Copyright (c) 2020 Luke Wilkinson | https://github.com/DukeWilki/retro-gamer-quiz/blob/master/LICENSE
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 ## Built With
 * [VScode](https://code.visualstudio.com/) - The editor of choice
