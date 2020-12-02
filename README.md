@@ -92,7 +92,7 @@ SOFTWARE.
 * [Terminal](https:///) - What would we do without our bash?
 
 ## Authors
-* **LUKE WILKINSON**
+* **LUKE WILKINSON** | https://github.com/dukewilki | luke.wilkinson.nz@gmail.com
 
 ## Credits and links
 Google Fonts
